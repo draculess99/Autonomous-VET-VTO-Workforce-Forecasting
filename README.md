@@ -273,6 +273,10 @@ The machine learning model predicts workload. The agentic workflow explains the 
 
 This makes the system more than a forecasting dashboard. It becomes a human-in-the-loop workforce decision-support system.
 
+```text
+docs/current_agentic_flow.md
+```
+
 The key contribution is:
 
 > From prediction to action: converting workload forecasts into traceable staffing recommendations using agentic AI and an autonomous supervisor layer.
@@ -366,6 +370,34 @@ This makes the project reusable beyond warehouse staffing and demonstrates how t
 
 ---
 
+## Autonomous Supervisor Trace
+
+The autonomous supervisor records a trace of the decision workflow so the final recommendation is not a black-box output.
+
+Example trace:
+
+```text
+Supervisor started autonomous VET/VTO workflow.
+Forecast output detected from forecasting node.
+Staffing recommendation detected from staffing node.
+Supervisor detected mixed staffing pattern: 1 VET week(s) and 2 VTO week(s).
+Risk level detected from risk node: Low.
+Supervisor guardrail review passed.
+Autonomous summary generated for human review.
+Supervisor completed autonomous VET/VTO workflow.
+
+```
+```text
+docs/autonomous_supervisor_trace.md
+```
+  → full trace explanation
+  → mixed staffing logic
+  → human-in-the-loop design
+  → example output
+  → why the trace matters
+
+---
+
 ## Portfolio Summary
 
 This project demonstrates applied AI engineering across forecasting, decision logic, guardrails, agentic workflows, and autonomous supervision.
@@ -373,3 +405,4 @@ This project demonstrates applied AI engineering across forecasting, decision lo
 A concise description:
 
 > I built a human-in-the-loop autonomous workforce planning system that uses XGBoost to forecast workload, agentic AI to explain staffing decisions, and an autonomous supervisor to validate guardrails, assign final recommendations, and record a transparent decision trace.
+
