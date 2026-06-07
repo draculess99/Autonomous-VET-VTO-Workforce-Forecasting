@@ -453,11 +453,3 @@ This project demonstrates applied AI engineering across forecasting, decision lo
 A concise description:
 
 > I built a human-in-the-loop autonomous workforce planning system that uses XGBoost to forecast workload, agentic AI to explain staffing decisions, and an autonomous supervisor to validate guardrails, assign final recommendations, and record a transparent decision trace.
-
-
-## Documentation
-
-- [Current Agentic Flow](docs/current_agentic_flow.md)
-- [Autonomous Supervisor Trace](docs/autonomous_supervisor_trace.md)
-
-
