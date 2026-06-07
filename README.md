@@ -350,6 +350,26 @@ scenario_templates.tsv  Scenario rule engine data
 
 ---
 
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+Start the Flask backend:
+```bash
+python flask_api.py
+```
+Start the Streamlit dashboard:
+```bash
+streamlit run streamlit_app.py
+```
+Optional environment variables:
+```bash
+GEMINI_API_KEY
+GROQ_API_KEY
+```
 ## Current Status
 
 The project currently includes:
