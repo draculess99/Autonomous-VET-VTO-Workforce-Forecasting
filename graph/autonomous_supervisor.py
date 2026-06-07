@@ -49,14 +49,36 @@ def run_autonomous_supervisor(state: OperationalState) -> OperationalState:
     # -------------------------------------------------
     # Select final recommendation
     # -------------------------------------------------
-    if state.staffing_action:
-        state.final_recommendation = state.staffing_action
-    else:
-        state.final_recommendation = state.workforce_recommendation
+    if state.vet_weeks > 0 and state.vto_weeks > 0:
+        state.final_recommendation = "MIXED"
+        trace.append(
+            f"Supervisor detected mixed staffing pattern: "
+            f"{state.vet_weeks} VET week(s) and {state.vto_weeks} VTO week(s)."
+        )
 
-    trace.append(
-        f"Supervisor selected final recommendation: {state.final_recommendation}."
-    )
+    elif state.vet_weeks > state.vto_weeks:
+        state.final_recommendation = "VET"
+        trace.append("Supervisor selected VET based on dominant VET weeks.")
+
+    elif state.vto_weeks > state.vet_weeks:
+        state.final_recommendation = "VTO"
+        trace.append("Supervisor selected VTO based on dominant VTO weeks.")
+
+    elif state.staffing_action:
+        state.final_recommendation = state.staffing_action
+        trace.append(
+            f"Supervisor selected staffing node action: {state.final_recommendation}."
+        )
+
+    elif state.workforce_recommendation:
+        state.final_recommendation = state.workforce_recommendation
+        trace.append(
+            f"Supervisor selected workforce recommendation: {state.final_recommendation}."
+        )
+
+    else:
+        state.final_recommendation = "NORMAL"
+        trace.append("Supervisor defaulted final recommendation to NORMAL.")
 
     # -------------------------------------------------
     # Risk handling
@@ -83,15 +105,29 @@ def run_autonomous_supervisor(state: OperationalState) -> OperationalState:
     # -------------------------------------------------
     # Build autonomous summary
     # -------------------------------------------------
-    state.autonomous_summary = (
-        f"Autonomous supervisor recommends {state.final_recommendation}. "
-        f"Forecast signal: {state.forecast_summary} "
-        f"Staffing analysis: {state.staffing_summary} "
-        f"Risk level: {state.risk_level}. "
-        "This recommendation is decision-support only and should be reviewed "
-        "by a human operations manager before staffing action is taken."
-    )
+    if state.final_recommendation == "MIXED":
+        state.autonomous_summary = (
+            "Autonomous supervisor recommends a mixed staffing strategy. "
+            f"The forecast includes {state.vet_weeks} VET week(s) and "
+            f"{state.vto_weeks} VTO week(s). "
+            f"Peak demand occurs in Week {state.peak_week}, so targeted VET coverage "
+            "should be preserved for the peak period while selective VTO can be used "
+            "during lower-demand weeks. "
+            f"Risk level: {state.risk_level}. "
+            "This recommendation is decision-support only and should be reviewed "
+            "by a human operations manager before staffing action is taken."
+        )
 
+    else:
+        state.autonomous_summary = (
+            f"Autonomous supervisor recommends {state.final_recommendation}. "
+            f"Forecast signal: {state.forecast_summary} "
+            f"Staffing analysis: {state.staffing_summary} "
+            f"Risk level: {state.risk_level}. "
+            "This recommendation is decision-support only and should be reviewed "
+            "by a human operations manager before staffing action is taken."
+        )
+        
     trace.append("Autonomous summary generated for human review.")
     trace.append("Supervisor completed autonomous VET/VTO workflow.")
 
