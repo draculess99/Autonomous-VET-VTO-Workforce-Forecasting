@@ -1,4 +1,6 @@
-# Autonomous Agentic VET/VTO Workforce Forecasting System
+# Autonomous VET/VTO Workforce Forecasting System
+
+A human-in-the-loop autonomous workforce planning system using XGBoost forecasting, agentic AI, guardrails, and a supervisor-led control layer to produce traceable VET/VTO staffing recommendations.
 
 ## Overview
 
