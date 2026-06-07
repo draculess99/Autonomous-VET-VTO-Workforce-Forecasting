@@ -243,6 +243,31 @@ Final Recommendation + Risk + Guardrail Status + Trace
    ↓
 Human Review
 ```
+## Screenshots
+
+### Forecast Dashboard
+
+The dashboard displays the 12-week demand forecast, weekly labor cost, and cumulative future cost.
+
+![Forecast Dashboard](images/forecast_dashboard.png)
+
+### Operational Recommendations
+
+The recommendation layer converts forecast results into VET, VTO, Normal, or Mixed staffing guidance.
+
+![Operational Recommendations](images/operational_recommendations.png)
+
+### AI Operational Decision Summary
+
+The AI decision summary explains the operational meaning of the forecast, staffing recommendation, risk level, and cost impact.
+
+![AI Operational Decision Summary](images/ai_operational_decision_summary.png)
+
+### Autonomous Control Layer
+
+The autonomous supervisor reviews the completed workflow, confirms guardrail status, assigns the final recommendation, records risk level, and stores a traceable decision path.
+
+![Autonomous Control Layer](images/autonomous_control_layer.png)
 
 ---
 
