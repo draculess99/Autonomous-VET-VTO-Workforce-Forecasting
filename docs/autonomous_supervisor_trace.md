@@ -83,14 +83,5 @@ The trace makes the autonomous workflow explainable. It shows how the system mov
 This helps demonstrate that the project is not a black-box AI system. It is a traceable, human-in-the-loop autonomous workforce planning workflow.
 
 
-Then in your README, add:
-
-```markdown
-## Documentation
-
-- [Current Agentic Flow](docs/current_agentic_flow.md)
-- [Autonomous Supervisor Trace](docs/autonomous_supervisor_trace.md)
-
-```
 
 
