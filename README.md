@@ -271,6 +271,13 @@ The autonomous supervisor reviews the completed workflow, confirms guardrail sta
 
 ---
 
+## Documentation
+
+- [Current Agentic Flow](docs/current_agentic_flow.md)
+- [Autonomous Supervisor Trace](docs/autonomous_supervisor_trace.md)
+
+---
+
 ## Technology Stack
 
 * Python
@@ -370,6 +377,8 @@ Optional environment variables:
 GEMINI_API_KEY
 GROQ_API_KEY
 ```
+---
+
 ## Current Status
 
 The project currently includes:
