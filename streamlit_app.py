@@ -36,14 +36,18 @@ from guardrails.guardrails import (
 # PAGE CONFIG
 # ----------------------------------------------------------
 st.set_page_config(
-    page_title="AI Workforce Forecasting & Labor Optimization",
+    page_title="Autonomous AI Workforce Planning",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-st.title("AI-Powered Warehouse Workforce Forecasting & VET/VTO Labor Optimization")
+st.title("Autonomous AI Workforce Forecasting & VET/VTO Decision Support")
+
 st.caption(
-    "Advanced portfolio version of my Springboard VET/VTO capstone, extending the base forecasting project with XGBoost, LangGraph, RAG, operational memory, and AI-assisted labor planning. Built by Wil Low using Walmart 2010–2012 retail demand proxy data to model warehouse workload and staffing decisions."
+    "A human-in-the-loop autonomous workforce planning system that uses XGBoost "
+    "to forecast workload, agentic AI to explain staffing decisions, and an autonomous "
+    "supervisor to validate guardrails, assign final recommendations, and record a "
+    "transparent decision trace."
 )
 
 # -----------------------------------
@@ -1447,9 +1451,11 @@ if run_clicked:
         st.subheader("AI Decision Workflow Architecture")
         
         st.info(
-            "LangGraph workflow active: Forecast Node -> Staffing Node -> Risk Node -> Cost Node -> RAG Context Node -> Executive Summary Node -> Operational Memory"
+            "Autonomous workflow active: Forecast Node -> Staffing Node -> Risk Node -> "
+            "Cost Node -> RAG Context Node -> Executive Summary Node -> Operational Memory "
+            "-> Autonomous Supervisor -> Final Recommendation + Trace"
         )
-
+        
     else:
         st.info("No scenario matched.")
 
