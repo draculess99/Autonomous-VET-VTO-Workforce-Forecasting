@@ -1,0 +1,3 @@
+This system is a decision-support prototype.
+Forecast results depend on the quality of historical data, scenario assumptions, and selected labor planning parameters.
+Actual staffing decisions should consider manager judgment, site-specific constraints, attendance, backlog, safety, and real operational conditions.

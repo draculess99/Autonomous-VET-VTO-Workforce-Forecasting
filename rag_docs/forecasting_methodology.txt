@@ -1,0 +1,3 @@
+The system uses historical weekly demand patterns and operational scenario inputs to forecast future workload.
+Forecast demand is converted into VET, VTO, or Normal staffing recommendations using threshold-based business rules.
+The Walmart retail sales dataset is used as a proxy for warehouse workload demand in this capstone project.

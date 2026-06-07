@@ -1,0 +1,3 @@
+Labor cost impact is estimated from forecast staffing actions, projected VET weeks, projected VTO weeks, worker capacity assumptions, and hourly labor cost assumptions.
+The cost estimate is a planning approximation and should not be treated as payroll accounting.
+The purpose of the cost model is to support scenario comparison, workforce planning, and labor cost discipline.

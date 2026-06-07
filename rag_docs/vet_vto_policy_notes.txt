@@ -1,0 +1,4 @@
+VET means Voluntary Extra Time and is used when forecast workload exceeds normal staffing capacity.
+VTO means Voluntary Time Off and is used when forecast workload is below staffing capacity or when excess labor may exist.
+The system recommends VET during high forecast demand weeks and VTO during low forecast demand weeks.
+VET and VTO outputs are planning recommendations, not automatic staffing commands.

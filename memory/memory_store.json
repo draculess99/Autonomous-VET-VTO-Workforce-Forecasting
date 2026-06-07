@@ -1,0 +1,100 @@
+[
+  {
+    "action": "VET",
+    "stress_band": "Low",
+    "peak_week": 3,
+    "risk": "Minimal Operational Risk",
+    "summary": "VET conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  },
+  {
+    "action": "VET",
+    "stress_band": "Low",
+    "peak_week": 2,
+    "risk": "Minimal Operational Risk",
+    "summary": "VET conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Low",
+    "peak_week": 5,
+    "risk": "Logistics Stress (6.0%)",
+    "summary": "VTO conditions occurred during Low operational stress with primary risk driver Logistics Stress (6.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 5,
+    "risk": "Logistics Stress (14.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Logistics Stress (14.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 3,
+    "risk": "Shipping Delay (12.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Shipping Delay (12.0%)."
+  },
+  {
+    "action": "VET",
+    "stress_band": "Low",
+    "peak_week": 3,
+    "risk": "Minimal Operational Risk",
+    "summary": "VET conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  },
+  {
+    "action": "VET",
+    "stress_band": "Low",
+    "peak_week": 3,
+    "risk": "Minimal Operational Risk",
+    "summary": "VET conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 5,
+    "risk": "Warehouse Congestion (19.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Warehouse Congestion (19.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 5,
+    "risk": "Shipping Delay (17.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Shipping Delay (17.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 5,
+    "risk": "Shipping Delay (17.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Shipping Delay (17.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Low",
+    "peak_week": 3,
+    "risk": "Minimal Operational Risk",
+    "summary": "VTO conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  },
+  {
+    "action": "VET",
+    "stress_band": "Medium",
+    "peak_week": 3,
+    "risk": "Demand Velocity (9.0%)",
+    "summary": "VET conditions occurred during Medium operational stress with primary risk driver Demand Velocity (9.0%)."
+  },
+  {
+    "action": "VTO",
+    "stress_band": "Medium",
+    "peak_week": 5,
+    "risk": "Warehouse Congestion (15.0%)",
+    "summary": "VTO conditions occurred during Medium operational stress with primary risk driver Warehouse Congestion (15.0%)."
+  },
+  {
+    "action": "VET",
+    "stress_band": "Low",
+    "peak_week": 3,
+    "risk": "Minimal Operational Risk",
+    "summary": "VET conditions occurred during Low operational stress with primary risk driver Minimal Operational Risk."
+  }
+]
