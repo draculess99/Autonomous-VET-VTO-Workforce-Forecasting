@@ -243,6 +243,8 @@ Final Recommendation + Risk + Guardrail Status + Trace
    ↓
 Human Review
 ```
+---
+
 ## Screenshots
 
 ### Forecast Dashboard
