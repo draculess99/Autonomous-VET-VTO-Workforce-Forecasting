@@ -940,10 +940,10 @@ if run_clicked:
     try:
         # IMPORTANT:
         # Local:
-        api_url = "http://localhost:5000/forecast"
+        # api_url = "http://localhost:5000/forecast"
         #
         # Docker:
-        # api_url = "https://warehouse-backend-n7on.onrender.com/forecast"
+        api_url = "https://warehouse-backend-n7on.onrender.com/forecast"
 
         response = requests.post(api_url, json=safe_payload)
 
