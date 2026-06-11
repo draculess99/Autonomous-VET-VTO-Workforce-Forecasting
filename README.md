@@ -452,7 +452,7 @@ Supervisor completed autonomous VET/VTO workflow.
 
 ```
 
-See the full trace explanation in `docs/autonomous_supervisor_trace.md`.
+See the full [Autonomous Supervisor Trace explanation](docs/autonomous_supervisor_trace.md).
 
 ---
 
