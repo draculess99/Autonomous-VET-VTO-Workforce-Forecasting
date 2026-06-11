@@ -31,6 +31,25 @@ The system helps answer:
 
 ---
 
+## Technology Stack
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Streamlit
+* Flask
+* Plotly
+* LangGraph-style workflow
+* CrewAI-style agentic design
+* Pydantic
+* RAG context layer
+* GitHub Pages
+* Docker / cloud deployment experiments
+
+---
+
 ## Architecture Evolution
 
 ### 1. Basic Forecasting Version
@@ -123,6 +142,16 @@ This version answers:
 
 ---
 
+## How This Differs from the Agentic Version
+
+The earlier agentic version explains the forecast through separate forecast, staffing, risk, cost, RAG, and executive-summary nodes.
+
+This autonomous version adds a supervisor-led control layer on top of that workflow.
+
+The supervisor reviews the completed operational state, checks whether required outputs are present, confirms guardrail status, assigns a final recommendation, records risk level, and stores a traceable decision path for human review.
+
+---
+
 ## Key Features
 
 * XGBoost workload forecasting
@@ -212,7 +241,8 @@ Autonomous summary generated for human review.
 Supervisor completed autonomous VET/VTO workflow.
 ```
 
-The trace helps demonstrate how each layer contributed to the final staffing recommendation.
+
+See the full trace explanation in `docs/autonomous_supervisor_trace.md`.
 
 ---
 
@@ -243,6 +273,7 @@ Final Recommendation + Risk + Guardrail Status + Trace
    ↓
 Human Review
 ```
+
 ---
 
 ## Screenshots
@@ -277,25 +308,6 @@ The autonomous supervisor reviews the completed workflow, confirms guardrail sta
 
 - [Current Agentic Flow](docs/current_agentic_flow.md)
 - [Autonomous Supervisor Trace](docs/autonomous_supervisor_trace.md)
-
----
-
-## Technology Stack
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* XGBoost
-* Streamlit
-* Flask
-* Plotly
-* LangGraph-style workflow
-* CrewAI-style agentic design
-* Pydantic
-* RAG context layer
-* GitHub Pages
-* Docker / cloud deployment experiments
 
 ---
 
