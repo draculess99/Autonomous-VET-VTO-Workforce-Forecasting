@@ -452,11 +452,7 @@ Supervisor completed autonomous VET/VTO workflow.
 
 ```
 
-  → full trace explanation
-  → mixed staffing logic
-  → human-in-the-loop design
-  → example output
-  → why the trace matters
+See the full trace explanation in `docs/autonomous_supervisor_trace.md`.
 
 ---
 
